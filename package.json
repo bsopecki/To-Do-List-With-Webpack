@@ -27,5 +27,8 @@
     "react-dom": "^16.8.2",
     "webpack": "^4.29.4",
     "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
   }
 }
