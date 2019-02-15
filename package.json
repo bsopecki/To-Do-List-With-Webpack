@@ -23,6 +23,8 @@
     "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
     "webpack": "^4.29.4",
     "webpack-cli": "^3.2.3"
   }
