@@ -1,12 +1,16 @@
 import React from 'react';
 import style from './App.css';
 import uuid from 'uuid';
+import Title from '../components/Title'
+
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: [],
+
+            title: 'Webpack loaders'
         };
     }
 
