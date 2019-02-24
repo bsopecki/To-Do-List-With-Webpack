@@ -3,6 +3,7 @@ import style from './App.css';
 import uuid from 'uuid';
 import Title from '../components/Title';
 import Todos from '../components/TodoList';
+import { hot } from 'react-hot-loader';
 
 
 class App extends React.Component {
@@ -48,4 +49,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default hot(module)(App);
