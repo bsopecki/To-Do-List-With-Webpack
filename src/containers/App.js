@@ -1,17 +1,27 @@
 import React from 'react';
 import style from './App.css';
 import uuid from 'uuid';
-import Title from '../components/Title'
+import Title from '../components/Title';
+import Todos from '../components/TodoList';
 
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: [],
-
+            data: [{
+                id: 1,
+                text: 'clean room'
+            }, {
+                id: 2,
+                text: 'wash the dishes'
+            }, {
+                id: 3,
+                text: 'feed my cat'
+            }],
             title: 'Webpack loaders'
         };
+
     }
 
     addTodo(val) {
@@ -31,7 +41,8 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-                Tutaj pojawią się komponenty naszej aplikacji.
+                <Title props={this.state.title} />
+                <Todos data={this.state.data} removeTodo={this.removeTodo} />
             </div>
         );
     }
