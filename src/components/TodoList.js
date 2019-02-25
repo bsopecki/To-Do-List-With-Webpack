@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './TodoList.css';
 
 
 const Todos = ({ data, removeTodo }) => {
@@ -12,7 +13,7 @@ const Todos = ({ data, removeTodo }) => {
             )
         })
     ) : (
-            <p className="center">You have no todo's left, yay!</p>
+            <p className={style.center}>You have no todo's left, yay!</p>
         );
     return (
         <div className="todos collection">
