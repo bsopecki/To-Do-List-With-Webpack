@@ -43,7 +43,7 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 <Title props={this.state.title} />
-                <Todos data={this.state.data} removeTodo={this.removeTodo} />
+                <Todos data={this.state.data} removeTodo={this.removeTodo.bind(this)} />
             </div>
         );
     }
