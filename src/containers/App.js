@@ -3,6 +3,7 @@ import style from './App.css';
 import uuid from 'uuid';
 import Title from '../components/Title';
 import Todos from '../components/TodoList';
+import TodoForm from '../components/TodoForm';
 import { hot } from 'react-hot-loader';
 
 
@@ -43,6 +44,7 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 <Title props={this.state.title} />
+                <TodoForm addTodo={this.addTodo.bind(this)} />
                 <Todos data={this.state.data} removeTodo={this.removeTodo.bind(this)} />
             </div>
         );
